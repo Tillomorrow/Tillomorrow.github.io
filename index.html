@@ -1,56 +1,12 @@
 <html>
     <head>
-        <style>
-            body {
-                background-color: #282c36;
-                font-family: 'Courier New', Courier, monospace;
-                max-width: 800px;
-                color: #ffffff;
-                padding: 40px 20px;
-                font-size: 20px;
-            }
-            a:link {
-                color: #aee6fe;
-            }
-            a:visited {
-                color: #aee6fe;
-            }
-            div {
-                    display: block;
-                    white-space: pre;
-                    font-size: 0.75vw;
-                    text-align: center;
-                    width: 500px;
-                }
-            html {
-                    scroll-behavior: smooth;
-                }
-            hr {
-                width: vw;
-            }
-        sidebar {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .links-btn {
-            display: block;
-            margin-bottom: 20px;
-        }
-        .about-btn {
-            display: block;
-            margin-bottom: 20px;
-        }
-        .bottom {
-            margin-top: 500px;
-        }
-        </style>
+        <title>main page - tillomorrow's gateway</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div>
             <pre>
-                <h1>
+                <h1 class="ascii-art">
  _______  ___   ___      ___      _______  __   __  _______  ______    ______    _______  _     _ 
 |       ||   | |   |    |   |    |       ||  |_|  ||       ||    _ |  |    _ |  |       || | _ | |
 |_     _||   | |   |    |   |    |   _   ||       ||   _   ||   | ||  |   | ||  |   _   || || || |
@@ -58,9 +14,9 @@
   |   |  |   | |   |___ |   |___ |  |_|  ||       ||  |_|  ||    __  ||    __  ||  |_|  ||       |
   |   |  |   | |       ||       ||       || ||_|| ||       ||   |  | ||   |  | ||       ||   _   |
   |___|  |___| |_______||_______||_______||_|   |_||_______||___|  |_||___|  |_||_______||__| |__|
-</h1>
-<h2>[ tillo's gateway ]</h2>     
+                </h1>    
             </pre>
+            <h2>[ tillo's gateway ]</h2> 
         </div>
         <hr>
         <section id="about">
@@ -79,11 +35,10 @@ i do pixel art n tech scheibe
         </pre>
     </section>
     <sidebar>
-        <a href="#about" class="about-btn">about</a>
-        <a href="#links" class="links-btn">links</a>
+        <a href="index.html" class="side-btn">home</a>
+        <a href="gallery.html" class="side-btn">gallery</a>
+        <a href="https://github.com/Tillomorrow/Tillomorrow.github.io" class="side-btn">source</a>
+        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="side-btn">license</a>
     </sidebar>
-    <section id="bottom" class="bottom">
-        that's all -w-
-    </section>
     </body>
 </html>
