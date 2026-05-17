@@ -6,8 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <script>
-        function closePopup() {
-            document.getElementById('mobilePopup').style.display = 'none';
+        window.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('overlay');
+            
+            if (window.innerWidth > 768) {
+                overlay.style.display = 'none';
+            }
+        });
+        
+        function dismissOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
         }
     </script>
     <div id="main-content">
@@ -15,7 +24,7 @@
         <div id="mobilePopup" class="mobile-warning">
             <div class="popup-box">
                 <p>warning: this site looks like a disaster on devices with smaller screens (like phones)</p>
-                <button onclick="closePopup()">i don't care, let me in!!</button>
+               <button id="enter-btn" onclick="dismissOverlay()">i don't care, let me in!!</button>
             </div>
         </div>
         <div class="ascii">
