@@ -8,6 +8,18 @@ body {
     overflow-y: scroll;
 }
 
+.ascii-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+pre {
+    font-family: monospace;
+    text-align: left;
+}
+
 a:link {
     color: #aee6fe;
 }
