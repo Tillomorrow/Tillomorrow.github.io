@@ -27,6 +27,15 @@ a:visited {
     color: #aee6fe;
 }
 
+a:hover {
+    transition: all 0.25s ease;
+    color: #6ad1fc;
+}
+
+a {
+   transition: all 0.25s ease;
+}
+
 html {
     scroll-behavior: smooth;
 }
